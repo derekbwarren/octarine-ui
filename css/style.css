@@ -117,18 +117,18 @@
 
 /* SERVICES STYLING */
 .services-wrapper {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
-.services-header {
+.section-header {
   margin: 0 auto;
   text-align: center;
   font-size: 4rem;
   font-weight: 300;
 }
 
-.services-header span {
+.section-header span {
   font-weight: 400;
 }
 
@@ -165,7 +165,7 @@
 }
 
 .design-image {
-  width: 45%;
+  width: 70%;
   margin: 0 auto;
   padding: 2em;
 }
@@ -195,4 +195,38 @@
   font-size: 1.3rem;
   font-weight: 300;
   color: #4A4A4A;
+}
+
+@media only screen and (max-width: 1000px) {
+  .service-box-header {
+    font-size: 2rem;
+  }
+  .service-box-content {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .service-box-header {
+    font-size: 1.5rem;
+  }
+  .service-box-content {
+    font-size: .5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .service-box-header {
+    font-size: 2.5rem;
+  }
+  .service-box-content {
+    font-size: 1.3rem;
+  }
+  .service-box-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .reorder {
+    order: -1;
+  }
 }
