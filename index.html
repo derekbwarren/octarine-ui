@@ -1,47 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="./css/global.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="./css/global.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
   <link rel="icon" type="image/png" href="./images/icon_v2.png" />
 
   <title>Octarine</title>
 </head>
+
 <body>
-  <div class="header-background-color"></div>
-  <div class="header-image">
-    <img src="./images/header.png" alt="header" />
-    <nav class="nav-wrapper valign-wrapper">
+  <header>
+    <nav>
       <div class="nav-logo">
         <img src="./images/logo_v6.6.png" alt="octarine logo" />
       </div>
       <div class="nav-links-wrapper">
         <div class="nav-link">home</div>
-        <div class="nav-link">mission</div>
-        <div class="nav-link">services</div>
+        <div class="nav-link">
+          <a href="#mission">mission</a>
+        </div>
+        <div class="nav-link">
+          <a href="#services">services</a>
+        </div>
         <div class="nav-link">team</div>
         <div class="nav-link">contact</div>
       </div>
     </nav>
     <div class="header-wrapper">
-      <div class="header-tagline"><span>Modern</span> <span>Design</span></div>
+      <div class="header-tagline">
+        <span>Modern</span>
+        <span>Design</span>
+      </div>
       <div class="header-tagline-divider"></div>
-      <div class="header-tagline"><span>Custom</span> <span>Apps</span></div>
+      <div class="header-tagline">
+        <span>Custom</span>
+        <span>Apps</span>
+      </div>
     </div>
     <div class="learn-more-wrapper valign-wrapper" onClick="console.log('click')">
       <div class="learn-more-button">Learn More</div>
     </div>
-  </div>
-  <div class="mission-wrapper">
-    We are a team of software engineers dedicated to working closely with our clients to build robust, modern websites.
-  </div>
+  </header>
+  <section id="mission">
+    <div class="mission-wrapper">
+      We are a team of software engineers dedicated to working closely with our clients to build robust, modern websites.
+    </div>
+  </section>
+  <section id="services">
+    <div class="services-wrapper">
+      <div class="services-header">
+        Our
+        <span>Services</span>
+      </div>
+      <div class="h-divider"></div>
+      <div class="service-boxes-wrapper">
+        <div class="service-boxes-row">
+          <div class="service-box-wrapper">
+            <img class="design-image" src="./images/design_icons.png" alt="design" />
+          </div>
+          <div class="service-box-wrapper">
+            box 2
+          </div>
+        </div>
+        <div class="service-boxes-row">
+          <div class="service-box-wrapper">
+            box 1
+          </div>
+          <div class="service-box-wrapper">
+            <img class="api-image" src="./images/api_box.png" alt="api" />
+          </div>
+        </div>
+        <div class="service-boxes-row">
+          <div class="service-box-wrapper">
+            <img class="full-stack-image" src="./images/full-stack_box.png" alt="full stack" />
+          </div>
+          <div class="service-box-wrapper">
+            box 2
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="./js/jquery-3.3.1.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
+
 </html>

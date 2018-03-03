@@ -1,23 +1,46 @@
 html {
-  font-family: Helvetica, sans-serif;
-  font-size: 1em;
-  font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.5px;
+  box-sizing: border-box;
 }
 
 body {
-  font-size: 1em;
   font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.5;
   padding: 0;
   margin: 0;
   font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.5px;
-  box-sizing: border-box;
-  -webkit-text-size-adjust: none;
+}
+
+header {
+  background-image: url('../images/headerv2.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 14%;
+  position: relative;
+  background-size: cover;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  font-size: 1.25rem;
+  text-transform: lowercase;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em 0;
 }
 
 .valign-wrapper {
@@ -29,4 +52,11 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.h-divider {
+  height: 2px;
+  background-color: #761CEC;
+  width: 10em;
+  margin: 1em auto;
 }
