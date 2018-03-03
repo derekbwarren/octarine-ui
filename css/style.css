@@ -328,3 +328,13 @@
   border-radius: 8px;
   border: 2px solid #E05E36;;
 }
+
+footer {
+  width: 100%;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+.copyright {
+  font-size: .8em;
+}
