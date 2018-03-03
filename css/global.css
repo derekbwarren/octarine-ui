@@ -1,0 +1,32 @@
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5px;
+}
+
+body {
+  font-size: 1em;
+  font-family: Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5px;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+}
+
+.valign-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
