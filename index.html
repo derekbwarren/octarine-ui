@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Octarine Group</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Octarine Homepage">
-        <meta name="keywords" content="octarine, design, custom">
-        <link rel="stylesheet" href="styles.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <meta name="viewport" content="width=device-width">
-    </head>
-    <body>
-        <div id="countdown"></div>
-        <script type="text/javascript" src="app.js"></script>
-    </body>
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <link rel="icon" type="image/png" href="./images/icon_v2.png" />
+
+  <title>Octarine</title>
+</head>
+<body>
+  <div class="header-background-color"></div>
+  <div class="header-image">
+    <img src="./images/header.png" alt="header" />
+    <nav class="nav-wrapper valign-wrapper">
+      <div class="nav-logo">
+        <img src="./images/logo_v6.6.png" alt="octarine logo" />
+      </div>
+      <div class="nav-links-wrapper">
+        <div class="nav-link">home</div>
+        <div class="nav-link">mission</div>
+        <div class="nav-link">services</div>
+        <div class="nav-link">team</div>
+        <div class="nav-link">contact</div>
+      </div>
+    </nav>
+    <div class="header-wrapper">
+      <div class="header-tagline"><span>Modern</span> <span>Design</span></div>
+      <div class="header-tagline-divider"></div>
+      <div class="header-tagline"><span>Custom</span> <span>Apps</span></div>
+    </div>
+    <div class="learn-more-wrapper valign-wrapper" onClick="console.log('click')">
+      <div class="learn-more-button">Learn More</div>
+    </div>
+  </div>
+  <div class="mission-wrapper">
+    We are a team of software engineers dedicated to working closely with our clients to build robust, modern websites.
+  </div>
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
 </html>
