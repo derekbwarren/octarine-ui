@@ -115,7 +115,7 @@
 }
 /* END MISSION SECTION STYLES */
 
-/* SERVICES STYLING */
+/* START SERVICES STYLING */
 .services-wrapper {
   width: 60%;
   margin: 0 auto;
@@ -229,4 +229,46 @@
   .reorder {
     order: -1;
   }
+}
+/* END SERVICES STYLING */
+
+/* START TEAM STYLING */
+.team-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.team-members-wrapper {
+  width: 100%;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  width: 33%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member-image img {
+  width: 40%;
+  border-radius: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,.3);
+}
+
+.team-member-name {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: .5em 0;
+}
+
+.team-member-name span {
+  font-weight: 400;
 }
