@@ -9,6 +9,9 @@ $(document).ready(function () {
 
   $('#year').text(new Date().getFullYear())
 
+  var iconHeight = $('.contact-callout-icon').height()
+  $('.contact-callout-icon').css('width', iconHeight)
+
   // Select all links with hashes
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -32,14 +35,15 @@ $(document).ready(function () {
         if (target.length) {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault();
+          console.log(target.attr('id'))
           if (target.attr('id') === 'top') {
             var offset = target.offset().top
           } else if (target.attr('id') === 'services') {
-            var offset = target.offset().top - 200
+            var offset = target.offset().top - 90
           } else {
-            var offset = target.offset().top - 100
+            var offset = target.offset().top - 90
           }
-          var offset = target.offset().top - 100
+          // var offset = target.offset().top - 100
           $('html, body').animate({
             scrollTop: offset
           }, 1000, function () {

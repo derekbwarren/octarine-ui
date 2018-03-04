@@ -288,7 +288,12 @@ nav {
 
 /* START CONTACT STYLING */
 #contact {
-  background-color: #E05E36;
+  /* background-color: #E05E36; */
+  background: linear-gradient(141deg, #761CEC 0%, #9423BE 25%, #BD3E7F 50%, #E05E36 75%, #FD8503 100%);
+}
+
+#contact .h-divider {
+  background-color: #fff;
 }
 
 #contact .section-header {
@@ -296,57 +301,85 @@ nav {
 }
 
 .contact-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-subheader {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 1em 0;
   width: 60%;
   margin: 0 auto;
 }
 
-.contact-inputs-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
-
-.form-field-row {
+.contact-callouts-wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
 }
 
-.form-field-row .form-field {
-  width: 48%;
-}
-
-.form-field {
+.contact-callout-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  padding: 1em 2em;
+  width: 20%;
+}
+
+.contact-callout-icon {
+  border: 1px solid #fff;  
+  border-radius: 100%;
+  /* width: 3em; */
+  /* height: 3em; */
+  margin: 0 auto 1.5em auto;
+  text-align: center;
+}
+
+.contact-callout-icon img {
+  width: 3em;
+  height: 3em;
+  padding: 2em;
+  color: #fff;
+}
+
+.contact-callout-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-callout-content span:nth-child(1) {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.contact-callout-content span:nth-child(2) {
+  color: #fafafa;
+  font-size: 1rem;
   padding: .5em 0;
 }
 
-.form-label {
-  font-size: .8rem;
-  color: #fff;
-  padding: 0 .3em;
+.contact-callout-content span:nth-child(2) a {
+  text-decoration: none;
+  color: #fafafa;
 }
 
-.form-input {
-  font-size: 1.5rem;
-  padding: .2em .4em;
-  font-weight: 300;
-  border-radius: 8px;
-  border: 2px solid #E05E36;
+.contact-callout-content span:nth-child(2) a:hover {
+  text-decoration: underline;
+  color: #4A4A4A;
 }
 
-.form-textarea {
-  font-size: 1rem;
-  padding: .2em .4em;
-  font-weight: 300;
-  border-radius: 8px;
-  border: 2px solid #E05E36;
-}
+/* EMD CONTACT STYLING */
 
 footer {
   width: 100%;
