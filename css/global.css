@@ -64,3 +64,7 @@ section {
 input[type=text]:focus {
   outline: none;
 }
+
+*:focus {
+  outline: none;
+}

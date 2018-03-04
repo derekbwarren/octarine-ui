@@ -39,7 +39,12 @@
   transition: all 0.2s ease-in-out;
 }
 
-.nav-link:hover {
+.nav-link a {
+  color: #999999;
+  text-decoration: none;  
+}
+
+.nav-link a:hover {
   color: #fff;
   cursor: pointer;
   text-decoration: underline;
