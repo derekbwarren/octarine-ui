@@ -24,7 +24,7 @@ $(document).ready(function () {
         // Figure out element to scroll to
         var target = $(this.hash);
         $('.active').removeClass('active')
-        if($(this).attr('class') !== 'learn-more-link') {
+        if ($(this).attr('class') !== 'learn-more-link') {
           $(this).addClass('active')
         }
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -32,9 +32,9 @@ $(document).ready(function () {
         if (target.length) {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault();
-          if(target.attr('id') === 'top') {
+          if (target.attr('id') === 'top') {
             var offset = target.offset().top
-          } else if(target.attr('id') === 'services') {
+          } else if (target.attr('id') === 'services') {
             var offset = target.offset().top - 200
           } else {
             var offset = target.offset().top - 100
@@ -58,17 +58,31 @@ $(document).ready(function () {
       }
     });
 
-    if($(window).scrollTop() > 90) {
-      $('nav').css('background-color', 'rgba(0,0,0,' + 1 + ')')
-    }
+  if ($(window).scrollTop() > 90) {
+    $('nav').css('background-color', 'rgba(0,0,0,' + 1 + ')')
+  }
 
-    $(window).bind('scroll', () => {
-      var opacity = $(window).scrollTop() / 100
-      if(opacity > 1) {
-        $('nav').css('background-color', 'rgba(0,0,0,' + 1 + ')')
-      } else {
-        $('nav').css('background-color', 'rgba(0,0,0,' + opacity + ')')
-      }
-    })
+  $(window).bind('scroll', () => {
+    var opacity = $(window).scrollTop() / 100
+    if (opacity > 1) {
+      $('nav').css('background-color', 'rgba(0,0,0,' + 1 + ')')
+    } else {
+      $('nav').css('background-color', 'rgba(0,0,0,' + opacity + ')')
+    }
+  })
+  $(window).on('resize', () => {
+    if ($(window).width() < 600) {
+      $('.nav-links-wrapper').hide()
+    } else {
+      $('.nav-links-wrapper').show()
+    }
+  })
+
+  $('#send').on('click', () => {
+    console.log($('#name').val())
+    console.log($('#email').val())
+    console.log($('#phone').val())
+    console.log($('#message').val())
+  })
 })
 
