@@ -1,17 +1,15 @@
 /* START NAV STYLES */
-.nav-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  /* background-color: black; */
-  padding: .5em 0;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: background-color .5s ease;
+  background-color: rgba(0,0,0,0);
 }
 
 .nav-logo {
-  /* position: relative; */
-  padding: .8em 2em;
+  padding: .5em 2em;
   z-index: 100;
 }
 
@@ -48,6 +46,11 @@
   color: #fff;
   cursor: pointer;
   text-decoration: underline;
+}
+
+.active {
+  color: #fff !important;
+  text-decoration: underline !important;
 }
 /* END NAV STYLES */
 
@@ -336,8 +339,9 @@
 
 footer {
   width: 100%;
-  padding: 1.5em 0;
+  padding: .5em 0;
   text-align: center;
+  background-color: #fafafa;
 }
 
 .copyright {
