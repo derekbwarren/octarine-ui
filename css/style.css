@@ -103,6 +103,10 @@ nav {
   cursor: pointer;
   box-shadow: inset 0 0 0 3px #E05E36;
 }
+
+.learn-more-link {
+  text-decoration: none;
+}
 /* END HEADER STYLES */
 
 /* START MISSION SECTION STYLES */
@@ -342,8 +346,9 @@ footer {
   padding: .5em 0;
   text-align: center;
   background-color: #fafafa;
+  font-weight: 300;
 }
 
 .copyright {
-  font-size: .8em;
+  font-size: .7em;
 }

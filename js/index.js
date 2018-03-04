@@ -24,15 +24,24 @@ $(document).ready(function () {
         // Figure out element to scroll to
         var target = $(this.hash);
         $('.active').removeClass('active')
-        $(this).addClass('active')
-        console.log($(this))
+        if($(this).attr('class') !== 'learn-more-link') {
+          $(this).addClass('active')
+        }
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         // Does a scroll target exist?
         if (target.length) {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault();
+          if(target.attr('id') === 'top') {
+            var offset = target.offset().top
+          } else if(target.attr('id') === 'services') {
+            var offset = target.offset().top - 200
+          } else {
+            var offset = target.offset().top - 100
+          }
+          var offset = target.offset().top - 100
           $('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: offset
           }, 1000, function () {
             // Callback after animation
             // Must change focus!
@@ -49,8 +58,11 @@ $(document).ready(function () {
       }
     });
 
+    if($(window).scrollTop() > 90) {
+      $('nav').css('background-color', 'rgba(0,0,0,' + 1 + ')')
+    }
+
     $(window).bind('scroll', () => {
-      console.log($(window).scrollTop() / 100)
       var opacity = $(window).scrollTop() / 100
       if(opacity > 1) {
         $('nav').css('background-color', 'rgba(0,0,0,' + 1 + ')')
