@@ -8,13 +8,17 @@ $(document).ready(function () {
     $('.team-member').css('width', '100%')
     $('.nav-logo').css('padding', '.5em 2em .1em .5em')
     $('.header-wrapper').css('margin', '4em 0')
-  } else {
+    $('.header-tagline span').css('height', 'auto')
+    $('.header-tagline-divider').css('height', 'auto')
+    } else {
     $('.contact-callout-wrapper').css('width', '20%')
     $('.nav-links-wrapper').show()
     $('.team-member').css('width', '33%')
     $('.nav-logo').css('padding', '.5em 2em .1em 1em')
     $('.header-wrapper').css('margin', '0')
     $('.hamburger-wrapper').hide()
+    $('.header-tagline span').css('height', '70px')
+    $('.header-tagline-divider').css('height', '9em')
   }
 
   window.onresize = () => {
@@ -25,6 +29,8 @@ $(document).ready(function () {
       $('.nav-logo').css('padding', '.5em 2em .1em .5em')
       $('.header-wrapper').css('margin', '4em 0')
       $('.hamburger-wrapper').show()
+      $('.header-tagline span').css('height', 'auto')
+      $('.header-tagline-divider').css('height', 'auto')
     } else {
       $('.contact-callout-wrapper').css('width', '20%')
       $('.nav-links-wrapper').show()
@@ -33,6 +39,8 @@ $(document).ready(function () {
       $('.header-wrapper').css('margin', '0')
       $('.hamburger-wrapper').hide()
       $('.side-nav-links-wrapper').hide()
+      $('.header-tagline span').css('height', '70px')
+      $('.header-tagline-divider').css('height', '9em')
   }
     var boxWidth = $('.service-box-wrapper').width();
     $('.service-box-wrapper').css('height', boxWidth);
@@ -78,26 +86,13 @@ $(document).ready(function () {
           event.preventDefault();
           if (target.attr('id') === 'top') {
             var offset = target.offset().top
-          } else if (target.attr('id') === 'services') {
-            var offset = target.offset().top - 90
           } else {
             var offset = target.offset().top - 90
           }
           // var offset = target.offset().top - 100
           $('html, body').animate({
             scrollTop: offset
-          }, 1000, function () {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            };
-          });
+          }, 1000);
         }
       }
     });
