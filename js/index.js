@@ -109,5 +109,13 @@ $(document).ready(function () {
       $('nav').css('background-color', 'rgba(0,0,0,' + opacity + ')')
     }
   })
+
+  $('.mail-icon').on('click', () => {
+    window.location="mailto:contact@octarinegroup.com"
+  })
+
+  $('.facebook-icon').on('click', () => {
+    window.location="https://facebook.com/octarinegroup"
+  })
 })
 
