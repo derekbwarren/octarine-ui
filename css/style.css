@@ -324,8 +324,9 @@ nav {
 }
 
 .service-box-icon img {
-  width: 4em;
+  /* width: 4em; */
   padding: 0 0 1em 0;
+  max-height: 4em;
 }
 
 .service-box-header {
