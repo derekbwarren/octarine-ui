@@ -21,7 +21,7 @@ header {
   background-image: url('../images/headerv2.png');
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 14% 0;
+  padding: 15% 0 14% 0;
   position: relative;
   background-size: cover;
   width: 100%;
